@@ -402,6 +402,15 @@ a {
   }
 }
 
+/* Utility: Poppins + Capitalize first letter, rest lowercase */
+.poppins-cap {
+  font-family: "Poppins", Roboto, sans-serif;
+  text-transform: lowercase;
+}
+.poppins-cap::first-letter {
+  text-transform: uppercase;
+}
+
 /* polygon */
 .polygon {
   clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
