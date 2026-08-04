@@ -1,29 +1,6 @@
-/*
-Theme Name: Kaira - Bootstrap 5 Fashion Store HTML CSS Template
-Theme URI: https://templatejungle.com/
-Author: TemplatesJungle
-Author URI: https://templatejungle.com/
-Description: Kaira - Bootstrap 5 Fashion Store HTML CSS Template is specially designed product packaged for Fashion Stores by TemplatesJungle.
-Version: 1.1
-*/
 
-/*--------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
---------------------------------------------------------------*/
-
-/*------------------------------------*\
-    Table of contents
-\*------------------------------------*/
-
-/*------------------------------------------------
-CSS STRUCTURE:
-
-1. VARIABLES
-2. GENERAL TYPOGRAPHY
-
---------------------------------------------------------------*/
 body {
-  --heading-font: "Marcellus", Roboto, sans-serif;
+  --heading-font: "DM Serif Display", serif;
   --heading-font-weight: 400;
   --heading-color: #111;
   --heading-line-height: 1.24;
@@ -31,7 +8,7 @@ body {
   --swiper-theme-color: #8C907E;
 
   /* bootstrap */
-  --bs-body-font-family: "Jost", Roboto, sans-serif;
+  --bs-body-font-family: "Poppins", Roboto, sans-serif;
   --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -109,7 +86,8 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
+  color:#e3c88a;
 }
 
 h2,
@@ -1539,4 +1517,25 @@ a.btn-link.text-light:after {
   background-position: center;
   background-size: cover;
   transition: transform .3s ease-out;
+}
+
+.btn-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 999px;
+    transition: all .3s ease;
+    white-space: nowrap;
+}
+
+.btn-instagram:hover {
+    background: #2a2a2a;
+    color: #fff;
+    transform: translateY(-1px);
 }
