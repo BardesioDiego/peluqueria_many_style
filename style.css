@@ -763,13 +763,16 @@ a {
 .section-gold {
   background: #e3c88a;
   color: #fff;
+  font-size: 10px;
 }
+
 .section-gold a,
 .section-gold .section-title,
 .section-gold .review-title,
 .section-gold .testimonial-item blockquote p {
   color: #fff;
 }
+
 
 .search-popup input[type="search"] {
   font-size: 24px;
@@ -1052,7 +1055,7 @@ a {
 /** 7.9 Testimonial Slider
 --------------------------------------------------------------*/
 .testimonials .section-title {
-  font-size: 1em;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1;
 }
