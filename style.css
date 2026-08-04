@@ -759,6 +759,18 @@ a {
   }
 }
 
+/* Section gold background + white text */
+.section-gold {
+  background: #e3c88a;
+  color: #fff;
+}
+.section-gold a,
+.section-gold .section-title,
+.section-gold .review-title,
+.section-gold .testimonial-item blockquote p {
+  color: #fff;
+}
+
 .search-popup input[type="search"] {
   font-size: 24px;
   height: 60px;
