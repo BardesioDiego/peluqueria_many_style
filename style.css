@@ -913,6 +913,21 @@ a {
 }
 
 
+#billboard {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), 
+             url('images/hero_many_\ styles_colinas_de_solymar_salon_de_belleza_diseño_de_mechas_peluqueria.png') no-repeat center center / cover;
+  color: #ffffff;
+}
+
+/* Forzar que títulos y párrafos mantengan contraste blanco */
+#billboard p {
+  color: #ffffff;
+}
+
+#billboard .section-title {
+  color: #e3c88a;
+}
+
 /* - Border Hover Effects
 ------------------------------------------------------------- */
 .border-animation a,
