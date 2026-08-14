@@ -58,6 +58,11 @@ h6,
   line-height: var(--heading-line-height);
 }
 
+/* Regla específica para h5 */
+h5, .h5 {
+  font-family: 'Poppins', sans-serif !important;
+}
+
 h1.light,
 .h1,
 h2.light,
@@ -1562,4 +1567,8 @@ a.btn-link.text-light:after {
     background: #2a2a2a;
     color: #fff;
     transform: translateY(-1px);
+}
+
+#footer {
+    font-family: 'Poppins', sans-serif !important;
 }
