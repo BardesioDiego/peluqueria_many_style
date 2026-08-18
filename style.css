@@ -1,4 +1,13 @@
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   --heading-font: "DM Serif Display", serif;
   --heading-font-weight: 400;
@@ -936,9 +945,66 @@ a {
   color: #ffffff;
 }
 
+@media (max-width: 576px) {
+  #billboard p {
+    font-size: 1rem;
+  }
+}
+
 #billboard .section-title {
   color: #e3c88a;
 }
+
+@media (max-width: 576px) {
+  #billboard .section-title {
+    font-size: 1.90rem;
+  }
+}
+
+/* 1. Bloquea el desbordamiento horizontal en toda la vista */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 2. Control de ancho y ajuste específico para el Billboard en móviles */
+@media (max-width: 767.98px) {
+  #billboard {
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Evita que imágenes o swiper excedan la pantalla */
+  #billboard img,
+  #billboard .swiper,
+  #billboard .swiper-wrapper,
+  #billboard .row {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Reducción drástica de tamaños de texto para móviles pequeños */
+  #billboard h1.section-title {
+    font-size: 1.4rem !important;
+    line-height: 1.1 !important;
+    word-wrap: break-word;
+  }
+
+  #billboard .col-11 p,
+  #billboard .banner-content p {
+    font-size: 0.8rem !important;
+    line-height: 1.2 !important;
+  }
+
+  #billboard .banner-content .item-anchor {
+    font-size: 0.95rem !important;
+  }
+}
+
 
 /* - Border Hover Effects
 ------------------------------------------------------------- */
@@ -1037,6 +1103,9 @@ a {
   top: -40px;
   left: 0;
   z-index: 0;
+  max-width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /*--------------------------------------------------------------
@@ -1599,3 +1668,4 @@ a.btn-link.text-light:after {
 #footer {
     font-family: 'Poppins', sans-serif !important;
 }
+
