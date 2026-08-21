@@ -111,7 +111,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 
 h4,
@@ -372,6 +372,31 @@ a {
 .slide-clip .swiper-slide.swiper-slide-prev .image-holder,
 .slide-clip .swiper-slide.swiper-slide-next .image-holder {
   animation: 1s slide-down;
+}
+
+.product-swiper {
+  padding-bottom: 90px !important;
+}
+
+/* Posiciona la paginación justo debajo del contenido */
+.product-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-wrapper {
+  margin-bottom: 20px !important; /* Empuja todo el bloque de diapositivas hacia arriba */
+}
+
+.product-swiper .swiper-pagination {
+  bottom: -5px !important; /* Permite bajar los puntos más allá del límite relativo */
+}
+
+.image-holder {
+  border-radius: 3%;
+}
+
+.product-image {
+  border-radius: 3%;
 }
 
 @keyframes slide-clip {
@@ -957,7 +982,7 @@ a {
 
 @media (max-width: 576px) {
   #billboard .section-title {
-    font-size: 1.90rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -989,14 +1014,14 @@ html, body {
 
   /* Reducción drástica de tamaños de texto para móviles pequeños */
   #billboard h1.section-title {
-    font-size: 1.4rem !important;
+    font-size: 1.8rem !important;
     line-height: 1.1 !important;
     word-wrap: break-word;
   }
 
   #billboard .col-11 p,
   #billboard .banner-content p {
-    font-size: 0.8rem !important;
+    font-size: 18px !important;
     line-height: 1.2 !important;
   }
 
@@ -1004,6 +1029,8 @@ html, body {
     font-size: 0.95rem !important;
   }
 }
+
+.img
 
 
 /* - Border Hover Effects
@@ -1669,3 +1696,9 @@ a.btn-link.text-light:after {
     font-family: 'Poppins', sans-serif !important;
 }
 
+.footer-texto-70 h5,
+.footer-texto-70 a,
+.footer-texto-70 p {
+  font-size: 70px !important;
+  line-height: 1.1 !important; /* Mantiene un interlineado adecuado para este tamaño */
+}
