@@ -1702,3 +1702,36 @@ a.btn-link.text-light:after {
   font-size: 70px !important;
   line-height: 1.1 !important; /* Mantiene un interlineado adecuado para este tamaño */
 }
+
+/* Quita la transición de cierre únicamente al hacer clic en un enlace interno */
+.offcanvas.no-transition {
+  transition: none !important;
+}
+
+/* Altura aproximada de tu cabecera para que no solape la sección de bienvenida */
+body {
+  padding-top: 80px !important;
+}
+
+/* Mantiene los saltos del menú alineados con la altura del header */
+html {
+  scroll-padding-top: 80px !important;
+}
+
+/* Fuerza el fondo claro y el texto en todo momento */
+.navbar.fixed-top,
+.navbar.fixed-top.navbar-scrolled,
+.navbar.fixed-top.header-scrolled {
+  background-color: #f8f9fa !important; /* Mismo color de bg-light */
+  transition: none !important;
+}
+
+/* Mantiene el color original de los enlaces del menú */
+.navbar.fixed-top .nav-link {
+  color: #212529 !important; /* Ajusta este color si tenías otro hex para el texto */
+}
+
+/* Evita cambios de color en el botón hamburguesa */
+.navbar.fixed-top .navbar-toggler-icon {
+  filter: none !important;
+}
