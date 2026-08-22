@@ -1182,7 +1182,7 @@ html, body {
 
 .testimonials .info h3 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .testimonials .swiper {
@@ -1288,6 +1288,34 @@ html, body {
 
   .testimonials .testimonial-item {
     margin: 15px;
+  }
+
+  .testimonials .testimonials-carousel,
+  .testimonials .testimonials-slider {
+    overflow: hidden;
+  }
+
+  .testimonials .testimonial-item {
+    margin: 15px;
+  }
+
+  /* Centra el título y el párrafo de la columna izquierda en móviles */
+  .testimonials .info {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  /* Ajusta el encabezado de cada tarjeta si también quieres centrar la foto/nombre */
+  .testimonials .testimonial-item .d-flex {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials .testimonial-item .testimonial-img {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
