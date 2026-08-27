@@ -1853,6 +1853,15 @@ a.btn-link.text-light:after {
 
 #footer {
     font-family: 'Poppins', sans-serif !important;
+    font-size: 0.85rem;
+}
+
+
+/* Ajusta max-height al tamaño deseado (ej. 16px o 18px) */
+.payment-methods img {
+  max-height: 16px; /* Tamaño reducido para los logos */
+  width: auto;
+  vertical-align: middle;
 }
 
 .footer-texto-70 h5,
